@@ -4,9 +4,20 @@ html {
 
 h1 {
   font-family: 'Lobster', cursive;
+  font-size: 3em;
+  margin: 0px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  padding: 0px 10px 10px 10px;
+  line-height: 20px;
 }
 
 .gradient {
+  display: flex;
   height: 100%;
   background-color: #615dad;
   /* For browsers that do not support gradients */
@@ -16,10 +27,51 @@ h1 {
 .uvodni_strana {
   display: flex;
   flex-direction: column;
-  max-width: 500px;
   justify-content: center;
   align-items: center;
   margin: auto;
   margin-top: 40px;
   color: #ffffff;
+  flex-basis: 320px;
+}
+
+.image {
+  min-width: 0;
+  width: 100%;
+  border-radius: 3% 3% 0% 0%;
+}
+
+.button {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button--pravidla {
+  background-color: #1fcca4;
+  border-style: none none solid;
+  border-bottom-width: 2px;
+  border-color: #283e50;
+}
+
+.button--pravidla:hover {
+  background-color: #1cbb96;
+}
+
+.button--hra {
+  background-color: #0197f6;
+}
+
+.button--hra:hover {
+  background-color: #0090e9;
+}
+
+.popis {
+  display: flex;
+  flex-direction: column;
+  background-color: #283e50;
+  justify-content: space-around;
 }
