@@ -124,20 +124,33 @@ h1 {
 .playing_area_item--circle {
   background: url(circle_black.svg);
   background-repeat: no-repeat;
-  background-size: 80%;
+  background-size: 5%;
   background-position: center;
   background-color: rgba(255, 255, 255, 0.4);
   opacity: 1;
+  animation-name: increase_size;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
 }
 
 .playing_area_item--cross {
   background: url(cross_black.svg);
   background-repeat: no-repeat;
-  background-size: 80%;
+  background-size: 5%;
   background-position: center;
   background-color: rgba(255, 255, 255, 0.4);
   opacity: 1;
+  animation-name: increase_size;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
 }
+
+@keyframes increase_size {
+  100% {
+    background-size: 80%;
+  }
+}
+
 
 
 .home_restart {
